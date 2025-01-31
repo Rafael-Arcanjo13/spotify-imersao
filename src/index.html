@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Imersão</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/sidebar-footer.css">
+    <link rel="stylesheet" href="styles/main-content.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +19,7 @@
         <nav class="sidebar_navigation">
             <div class="logo">
                 <a href="">
-                    <img src="/icons/logo-spotify.png" alt="Logo" />
+                    <img src="icons/logo-spotify.png" alt="Logo" />
                 </a>
             </div>
             <ul>
@@ -68,15 +70,39 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="footer-background">
-            <div class="footer-text">
-                <span>TESTAR O PREMIUM DE GRAÇA</span>
-                <span>Increva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</span>
-            </div>
-            <div class="footer-button-container">
-                <button class="footer-button">Increva-se grátis</button>
-            </div>
+    <main>
+        <div class="main-container">
+            <nav class="header_navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+
+                    <div class="header_search">
+                        <img src="icons/search.png" alt="">
+                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir? ">
+                    </div>
+
+                    <div class="header_login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>
+                
+            </nav>
+        </div>
+    </main>
+
+    <footer class="disclainer-premium">
+        <div class="text">
+            <p class="disclainer-premium_title">Testar o Premium de graça</p>
+            <p class="disclainer-premium_subtitle">Increva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+        </div>
+        <div class="button">
+            <button type="button">Increva-se grátis</button>
         </div>
     </footer>
 </body>
